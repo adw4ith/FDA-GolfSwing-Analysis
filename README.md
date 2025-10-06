@@ -37,12 +37,12 @@ It leverages smoothing, registration, and Functional Principal Component Analysi
 
 2. **Exploratory Data Analysis (EDA)**  
    Visualize raw trajectories and compute summary statistics. Identify differences in swing shapes, timing, and amplitude.
-
+    ![Smoothen and registered swings Example](Plots/Rplot01.png)
 
 3. **Smoothing & Registration**  
    Apply smoothing to reduce noise and perform **time-warping alignment** to synchronize key swing events (e.g., impact point).
 
-   ![Smoothen and registered swings Example](Plots/Rplot01.png)
+ 
 
 5. **Functional Principal Component Analysis (FPCA & mFPCA)**  
    - Perform FPCA for each axis (X, Y, Z).  
