@@ -4,7 +4,7 @@
 This project applies **Functional Data Analysis (FDA)** techniques to **3D golf swing motion data** to understand and classify swing dynamics.  
 It leverages smoothing, registration, and Functional Principal Component Analysis (FPCA) to capture continuous movement patterns and identify key sources of variation among golfers.
 
-![Sample 3D Trajectory](images/YOUR_IMAGE_NAME_HERE.png)
+![Sample 3D Trajectory](plots/3D.png)
 
 ---
 
@@ -38,23 +38,22 @@ It leverages smoothing, registration, and Functional Principal Component Analysi
 2. **Exploratory Data Analysis (EDA)**  
    Visualize raw trajectories and compute summary statistics. Identify differences in swing shapes, timing, and amplitude.
 
-   ![EDA Plot Example](images/YOUR_EDA_PLOT_IMAGE_HERE.png)
 
 3. **Smoothing & Registration**  
    Apply smoothing to reduce noise and perform **time-warping alignment** to synchronize key swing events (e.g., impact point).
 
-4. **Functional Principal Component Analysis (FPCA & mFPCA)**  
+   ![Smoothen and registered swings Example](plots/Rplot01.png)
+
+5. **Functional Principal Component Analysis (FPCA & mFPCA)**  
    - Perform FPCA for each axis (X, Y, Z).  
    - Conduct multivariate FPCA to capture correlated movements across axes.  
    - Extract principal components explaining swing variability.
 
-   ![FPCA Plot Example](images/YOUR_FPCA_PLOT_IMAGE_HERE.png)
-
-5. **Modeling & Classification**  
+6. **Modeling & Classification**  
    - Use FPCA scores as input features for classification (e.g., expert vs novice).  
    - Evaluate models using accuracy, confusion matrices, and cross-validation.
 
-6. **Visualization & Reporting**  
+7. **Visualization & Reporting**  
    - Visualize modes of variation, reconstructed curves, and performance plots.  
    - Output stored in the `Plots/` directory.
 
@@ -117,17 +116,6 @@ install.packages(c("fda", "fdapace", "tidyverse", "refund", "mgcv", "ggplot2", "
 - Apply 3D visualization libraries to animate swing trajectories.  
 - Evaluate swing consistency metrics across sessions.
 
----
-
-## 🖼 Suggested Images to Add
-You can include the following illustrative images in your `images/` folder:
-1. `3d_swing_trajectory.png` — 3D trajectory of a sample swing  
-2. `eda_summary.png` — Distribution or overlay of swings before/after registration  
-3. `fpca_modes.png` — Visualization of first 2–3 FPCA modes  
-4. `registration_alignment.png` — Before vs after alignment comparison  
-5. `model_performance.png` — Model accuracy or confusion matrix  
-
-Update their file names in the markdown under each placeholder.
 
 ---
 
