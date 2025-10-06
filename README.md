@@ -4,7 +4,7 @@
 This project applies **Functional Data Analysis (FDA)** techniques to **3D golf swing motion data** to understand and classify swing dynamics.  
 It leverages smoothing, registration, and Functional Principal Component Analysis (FPCA) to capture continuous movement patterns and identify key sources of variation among golfers.
 
-![Sample 3D Trajectory](plots/3D.png)
+![Sample 3D Trajectory](Plots/New/newplot.png)
 
 ---
 
@@ -42,7 +42,7 @@ It leverages smoothing, registration, and Functional Principal Component Analysi
 3. **Smoothing & Registration**  
    Apply smoothing to reduce noise and perform **time-warping alignment** to synchronize key swing events (e.g., impact point).
 
-   ![Smoothen and registered swings Example](plots/Rplot01.png)
+   ![Smoothen and registered swings Example](Plots/Rplot01.png)
 
 5. **Functional Principal Component Analysis (FPCA & mFPCA)**  
    - Perform FPCA for each axis (X, Y, Z).  
